@@ -8,11 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
         android:paddingTop="140sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/inputSum"
+        android:text="Введите сумму заказа"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        />
+
+    <EditText
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn"
         app:layout_constraintTop_toTopOf="parent"

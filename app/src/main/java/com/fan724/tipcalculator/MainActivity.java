@@ -28,14 +28,13 @@ public class MainActivity extends AppCompatActivity {
 
         btn.setOnClickListener(v -> {
             String text = editSum.getText().toString();
-            endZak.setText(text);
             Integer s;
-            if (text.isEmpty()) {
+            if (text.equals("0")) {
                 s = 0;
             } else {
                 s = (Integer.parseInt(text) * seekBar.getProgress()) / 100;
             }
-
+            endZak.setText(String.valueOf(s));
             textTip.setText(String.valueOf(s));
             endTip.setText(String.valueOf(s));
             endSum.setText(String.valueOf(Integer.parseInt(text) + s));

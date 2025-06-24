@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="inputSum">Введите сумму заказа:</string>
+</resources>
